@@ -38,4 +38,4 @@ def calc_weights(wu, wq, model_names):
         else:
             weights[ref] = w_prod[j] * 0.0
 
-    return wn
+    return weights
