@@ -1,0 +1,31 @@
+This Repository includes a series of code to apply weighting CMIP6 data. Method used in Liang et al. 2020, GRL (submitted).
+The weighting method is based on some previous study. Knutti et al. 2017, GRL, Lorenz et al. 2017, JGR and Brunner et al. 2019, ERL. 
+
+The function of this repository
+
+1. Data preparation  
+2. Weight CMIP6 models to constrain the future warming
+3. Evaluate weighting method by imperfect model test and probabilistic validation method
+4. Projection by weighting method compared with unweighted results
+
+The calculation setup
+
+1. Calculate diagnostics for targeted metric for preparation (trend, global gridded near-surface temperature)
+2. Make evaluation on targeted diagnostic, e.g based on correlations for historical diagnostic and future warming.
+3. Calculate distance matrix, e.g. trend difference between all models and all models and obs and RMSE between all models and all models and obs, can use code here
+4. Calculate optimal sigma values. 
+   For sigma_d values in our cases, since σ_D varies between future periods for each SSP, we use different σ_D over different periods when computing weights for 
+   projection. 
+   For sigma_s, we calculate metrics using a range of sigma values for denominator of weighting equation by historical simulations.
+5. Use sigma values and distance matrix (model-model) to make evaluation by imperfect model test and probabilistic validation, which can use code here
+6. Make projection by distance matrix (model-obs) to make projection
+
+Dataset:
+
+Observation data: HadCRUT4 (https://crudata.uea.ac.uk/cru/data/temperature/) and ERA5 (https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5) 
+CMIP6 data: https://esgf-node.llnl.gov/projects/cmip6/
+
+
+
+
+ 
