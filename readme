@@ -20,7 +20,7 @@ The calculation setup
 5. Use sigma values and distance matrix (model-model) to make evaluation by imperfect model test and probabilistic validation, which can use code here
 6. Make projection by distance matrix (model-obs) to make projection
 
-Dataset:
+Dataset for reference:
 
 Observation data: HadCRUT4 (https://crudata.uea.ac.uk/cru/data/temperature/) and ERA5 (https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5) 
 CMIP6 data: https://esgf-node.llnl.gov/projects/cmip6/
