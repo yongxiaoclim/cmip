@@ -14,7 +14,7 @@ obs_series=[]
 
 for i in range(len(model_names)):
     ## create one dimension arry for pseudo observation
-    ## series whichb can compared with predicted mean series    
+    ## series which can compared with predicted mean series    
     obs_pro=pro[i]
     obs_series=np.append(obs_series,obs_pro)
 
