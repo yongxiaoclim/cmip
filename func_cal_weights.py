@@ -1,25 +1,25 @@
 import numpy as np
 
-def calc_wd(dis_u, model_names, sigmaS = X):
-        wd = np.empty((len(model_names)))
+def calc_wu(dis_u, model_names, sigmaS = X):
+        wu = np.empty((len(model_names)))
         S = np.exp( - ((dis_u / sigmaS2) ** 2))
         for j in range(len(model_names)):
             S_tmp = np.copy(S[j, :]) 
             S_tmp[j] = 0
             Ru = 1 + (np.sum(S_tmp))
-            wd[j] = 1 / Ru
+            wu[j] = 1 / Ru
             del(S_tmp)
             del(Ru)
-    return wd
+    return wu
 
 
 
-def calc_wn(delta_q, model_names, sigmaD2 = X):
-        wn = np.empty((len(model_names)))
+def calc_wq(delta_q, model_names, sigmaD2 = X):
+        wq = np.empty((len(model_names)))
         for j in range(len(model_names)):
-            wn[j] =  np.exp( - ((delta_q[j] / sigmaD2) ** 2))
+            wq[j] =  np.exp( - ((delta_q[j] / sigmaD2) ** 2))
 
-    return wn
+    return wq
 
 
 
