@@ -1,3 +1,6 @@
+# The weighting method is based on some previous study. Knutti et al. 2017, GRL, Lorenz et al. 2017, JGR and Brunner et al. 2019, ERL.
+# We refer to the published code, more detail can be found from https://github.com/lukasbrunner/ClimWIP and https://github.com/ruthlorenz/weighting_CMIP
+# here show a example
 import numpy as np
 
 def calc_wu(dis_u, model_names, sigmaS = X):
