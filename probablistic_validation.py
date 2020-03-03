@@ -73,21 +73,21 @@ np.histogram(decile_all,bins=10,weights=decile_weights,density=False);
 his = plt.hist(decile_all, bins=10,weights=decile_weights)
  
 plt.show()
-##or draw a plot like submit paper
 
-index=0
-v1=np.arange(5*1).reshape(5, 1)
-v1 = v1.astype(np.float64)
-for s in np.arange(0, 1, 0.2):
-    v1[index]=0
-    value1=[]
-    for i in range(len(decile_all)):
-        if(decile_all[i] >s  and decile_all[i]<=s+0.2):
-           value1=np.append(value1,decile_weights[i])
-    v1[index]=sum(value1)
-    index=index+1
+##or draw a histogram plot with 5 bar 
+#index=0
+#v1=np.arange(5*1).reshape(5, 1)
+#v1 = v1.astype(np.float64)
+#for s in np.arange(0, 1, 0.2):
+#    v1[index]=0
+#    value1=[]
+#    for i in range(len(decile_all)):
+#        if(decile_all[i] >s  and decile_all[i]<=s+0.2):
+#           value1=np.append(value1,decile_weights[i])
+#    v1[index]=sum(value1)
+#    index=index+1
 
-feq_20 =  [num for elem in v1 for num in elem]
+#f#eq_20 =  [num for elem in v1 for num in elem]
 
 ################################################################
 
