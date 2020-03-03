@@ -1,4 +1,4 @@
-This Repository includes a series of code to apply weighting CMIP6 data. Method used in Liang et al. 2020, GRL (submitted).
+This Repository includes a series of code to apply weighting method on CMIP6 data. Related Methods have been used in Liang et al. 2020, GRL (submitted).
 The weighting method is based on some previous study. Knutti et al. 2017, GRL, Lorenz et al. 2017, JGR and Brunner et al. 2019, ERL. 
 
 ******This repository is a draft version, and I am continuously updating this version******2020 March 1****
